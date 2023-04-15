@@ -1,0 +1,14 @@
+---
+export interface Props {
+  bg: string;
+  text: string;
+}
+
+const { bg, text } = Astro.props;
+---
+
+<div class=`${bg} ${text} p-5`>
+  <div class="max-w-screen-md mx-auto">
+    <slot />
+  </div>
+</div>

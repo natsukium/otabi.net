@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AboutMe from "../components/AboutMe.astro";
+import ResearchInterests from "../components/ResearchInterests.astro";
+import Education from "../components/Education.astro";
+import WorkExperience from "../components/WorkExperience.astro";
+import Section from "../components/Section.astro";
+---
+
+<Layout title="About Me">
+  <Section bg="bg-black" text="text-rose">
+    <AboutMe />
+  </Section>
+  <Section bg="bg-wine-red" text="text-rose">
+    <ResearchInterests />
+  </Section>
+  <Section bg="bg-black" text="text-rose">
+    <Education />
+  </Section>
+  <Section bg="bg-wine-red" text="text-rose">
+    <WorkExperience />
+  </Section>
+</Layout>
