@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LatestResearch from "../components/LatestResearch.astro";
+import Section from "../components/Section.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+---
+
+<Layout title="Hikari Otabi, PhD">
+  <Section bg="bg-black" text="text-rose">
+    <SectionHeader>Hikari Otabi</SectionHeader>
+    <div class="md:grid md:grid-cols-5">
+      <div class="col-span-1 m-5">
+        <img src="/portfolio.webp" class="mx-auto my-5"/>
+      </div>
+      <div class="col-span-4 m-5">
+        <p class="m-5">
+          Thank you for visiting my homepage! My name is Hikari Otabi, currently
+          an assistant professor at the Department of Anatomy and Neurobiology,
+          Faculty of Medicine, Kagawa University, Japan.
+        </p>
+
+        <p class="m-5">
+          I was born in Shimane, Japan, and moved to Ibaraki, Japan when I
+          entered university. I conducted research on delayed nest building in
+          mice exposed to social defeat stress at the Laboratory of Feed
+          Science, College of Agriculture, Ibaraki University, Japan under the
+          tutorage of Prof. Atsushi Toyoda and obtained my B.S., M.S., and Ph.D.
+          degrees. I’m doing the above study and more information is available
+          in About me. After obtaining my Ph.D. degree, I worked at Setsunan
+          University in Osaka, Japan for one year on a project for the Japan
+          Agency for Medical Research and Development. Under the tutorage of
+          Prof. Ryo Inoue, I conducted research on the establishment of an
+          infectious disease testing system for xenotransplantation.
+        </p>
+
+        <p class="m-5">
+          As you can see, I have moved to many different places since I entered
+          college, and all of them have been very wonderful. In Osaka, I was
+          close to Kyoto, so I rode my road bike to Arashiyama and other places.
+        </p>
+
+        <p class="m-5">
+          No matter where in the world I my research do, I like to have a good
+          time in every situation. I also believe that, as the Japanese saying
+          goes, "Amadareishi wo ugatsu (constant dropping wears away a stone)",
+          and that if you persevere in small things, you will eventually achieve
+          great things.
+        </p>
+      </div>
+    </div>
+  </Section>
+  <Section bg="bg-wine-red" text="text-rose">
+    <LatestResearch />
+  </Section>
+</Layout>
