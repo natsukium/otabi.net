@@ -9,10 +9,30 @@ terraform {
 
 provider "cloudflare" {}
 
+variable "zone_id" {}
+
 variable "account_id" {}
 
 variable "project_name" {
   default = "otabi-net"
+}
+
+variable "domain" {
+  default = "otabi.net"
+}
+
+resource "cloudflare_record" "apex" {
+  zone_id = var.zone_id
+  type    = "CNAME"
+  name    = "otabi.net"
+  value   = cloudflare_pages_project.otabi_net.subdomain
+  proxied = true
+}
+
+resource "cloudflare_pages_domain" "apex" {
+  account_id   = var.account_id
+  project_name = var.project_name
+  domain       = var.domain
 }
 
 resource "cloudflare_pages_project" "otabi_net" {
