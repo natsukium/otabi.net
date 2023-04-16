@@ -107,5 +107,9 @@ dist
 # Astro generated types
 .astro/
 
+# terraform
+.terraform/
+terraform.tfstate*
+
 .direnv/
 .envrc

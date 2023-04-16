@@ -17,6 +17,7 @@
           buildInputs = with pkgs; [
             nodejs
             nodePackages.pnpm
+            terraform
           ];
         };
       }
