@@ -56,17 +56,5 @@ resource "cloudflare_pages_project" "otabi_net" {
     destination_dir = "/dist"
     root_dir        = "/"
   }
-  deployment_configs {
-    preview {
-      environment_variables = {
-        NODE_VERSION = "16.12.0"
-      }
-    }
-    production {
-      environment_variables = {
-        NODE_VERSION = "16.12.0"
-      }
-    }
-  }
 }
 
