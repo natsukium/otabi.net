@@ -1,29 +1,28 @@
 ---
 import Research from "../components/Research.astro";
 import SectionHeader from "../components/SectionHeader.astro";
+
+import papers from "../../papers.yaml";
 ---
 
 <SectionHeader>MY LATEST RESEARCH</SectionHeader>
 
 <div class="md:flex">
-  <Research
-    title="Development of a panel for detection of pathogens in xenotransplantation donor pigs"
-    publisher="Xenotransplantation, e12825, 2023"
-    date="28.09.2023"
-    href="https://doi.org/10.1111/xen.12825"
-  />
-
-  <Research
-    title="Studies of nest building behavior in social stress model of mouse"
-    publisher="Nihon Chikusan Gakkaiho 93 (2), 87-96, 2022"
-    date="25.05.2022"
-    href="https://doi.org/10.2508/chikusan.93.87"
-  />
-
-  <Research
-    title="Assessment of nest building and social interaction behavior in mice exposed to acute social defeat stress using a three‐dimensional depth camera"
-    publisher="Animal Science Journal 91(1), e13447, 2020"
-    date="01.2020"
-    href="https://doi.org/10.1111/asj.13447"
-  />
+  {
+    papers.papers
+      .map((paper) => {
+        if (paper.authors.match(/^Hikari Otabi/)) {
+          return (
+            <Research
+              title={paper.title}
+              publisher={paper.publisher}
+              date={paper.date}
+              href={paper.href}
+            />
+          );
+        }
+      })
+      .filter((elem) => elem !== undefined)
+      .slice(0, 3)
+  }
 </div>
