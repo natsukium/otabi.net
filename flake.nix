@@ -24,7 +24,7 @@
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
               nodejs
-              nodePackages.pnpm
+              pnpm
               terraform
             ];
           };
