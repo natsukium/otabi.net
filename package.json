@@ -17,6 +17,6 @@
   "devDependencies": {
     "@astrojs/language-server": "^2.14.2",
     "@rollup/plugin-yaml": "^4.1.2",
-    "typescript": "^5.6.2"
+    "typescript": "^7.0.0"
   }
 }
