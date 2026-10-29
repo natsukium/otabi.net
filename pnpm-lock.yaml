@@ -180,8 +180,8 @@ importers:
         specifier: ^2.14.2
         version: 2.17.3(@emnapi/runtime@1.11.3)(prettier@3.9.10)(typescript@5.9.3)
       '@rollup/plugin-yaml':
-        specifier: ^4.1.2
-        version: 4.1.2(rollup@4.66.0)
+        specifier: ^5.0.0
+        version: 5.0.1(rollup@4.66.0)
       typescript:
         specifier: ^5.6.2
         version: 5.9.3
@@ -792,11 +792,11 @@ packages:
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
 
-  '@rollup/plugin-yaml@4.1.2':
-    resolution: {integrity: sha512-RpupciIeZMUqhgFE97ba0s98mOFS7CWzN3EJNhJkqSv9XLlWYtwVdtE6cDw6ASOF/sZVFS7kRJXftaqM2Vakdw==}
+  '@rollup/plugin-yaml@5.0.1':
+    resolution: {integrity: sha512-oslHUtWi3Zepyx0IiZ3BBwc4PI1B1PUbkpBom+0w91UHuY0EVUIrGkrHfwW1reHzVOsTtkGj5z/Dx7jhguzP2g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+      rollup: ^2.78.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -2883,7 +2883,7 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@rollup/plugin-yaml@4.1.2(rollup@4.66.0)':
+  '@rollup/plugin-yaml@5.0.1(rollup@4.66.0)':
     dependencies:
       '@rollup/pluginutils': 5.5.1(rollup@4.66.0)
       js-yaml: 4.3.2
