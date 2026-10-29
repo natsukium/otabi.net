@@ -1,4 +1,47 @@
 papers:
+  - title: "Nest-building motivation in acute social defeat stress model mice: Effect of a low-temperature environment"
+    authors: "Hikari Otabi, Chiho Kozawa, Atsushi Toyoda"
+    publisher: "Applied Animal Behaviour Science 301, 107034. 2026."
+    href: "https://doi.org/10.1016/j.applanim.2026.107034"
+    year: 2026
+    date: "08.2026"
+
+  - title: "Female-biased vulnerability to transgenerational impact of paternal early-life stress"
+    authors: "Ichiro Ishikawa, Ken-ichi Ohta, Motoharu Imai, Masakazu Ishikawa, Haruki Kumei, Makoto Kashima, Ube Fugo, Shingo Suzuki, Hikari Otabi, Takanori Miki, Yu Nakamura"
+    publisher: "Psychoneuroendocrinology 186, 107773. 2026."
+    href: "https://doi.org/10.1016/j.psyneuen.2026.107773"
+    year: 2026
+
+  - title: "Time-Dependent Effect of BDNF on the Transcriptomes of Cortical Neurons: Induction of Matrix Metalloproteases by BDNF"
+    authors: "Anna Kawai, Shingo Suzuki, Hajime Shigeto, Saki Akigawa, Ken-Ichi Ohta, Hikari Otabi, Takanori Miki"
+    publisher: "Journal of Neurochemistry 170(3). 2026."
+    href: "https://doi.org/10.1111/jnc.70410"
+    year: 2026
+
+  - title: "Effects of attenuated TrkB signaling on the medial prefrontal cortex during early brain development: A comparative study using the maternal separation model"
+    authors: "Ken-Ichi Ohta, Hidetoshi Ujihara, Haruki Kumei, Shingo Suzuki, Hikari Otabi, Katsuhiko Warita, Takanori Miki"
+    publisher: "Behavioural Brain Research 495, 115790. 2025."
+    href: "https://doi.org/10.1016/j.bbr.2025.115790"
+    year: 2025
+
+  - title: "An enriched environment ameliorates the reduction of parvalbumin-positive interneurons in the medial prefrontal cortex caused by maternal separation early in life"
+    authors: "Kanako Irie, Ken-ichi Ohta, Hidetoshi Ujihara, Chihiro Araki, Kodai Honda, Shingo Suzuki, Katsuhiko Warita, Hikari Otabi, Haruki Kumei, Shinji Nakamura, Kosuke Koyano, Takanori Miki, Takashi Kusaka"
+    publisher: "Frontiers in Neuroscience 17. 2024."
+    href: "https://doi.org/10.3389/fnins.2023.1308368"
+    year: 2024
+
+  - title: "Large-scale animal model study uncovers altered brain pH and lactate levels as a transdiagnostic endophenotype of neuropsychiatric disorders involving cognitive impairment"
+    authors: "Hideo Hagihara, Hirotaka Shoji, Satoko Hattori, ..., Hikari Otabi, ..., Tsuyoshi Miyakawa"
+    publisher: "eLife. 2023."
+    href: "https://doi.org/10.7554/elife.89376.2"
+    year: 2023
+
+  - title: "Maternal separation early in life induces excessive activity of the central amygdala related to abnormal aggression"
+    authors: "Ken-ichi Ohta, Chihiro Araki, Hidetoshi Ujihara, Keizo Iseki, Shingo Suzuki, Hikari Otabi, Haruki Kumei, Katsuhiko Warita, Takashi Kusaka, Takanori Miki"
+    publisher: "Journal of Neurochemistry 167(6), 778-794. 2023."
+    href: "https://doi.org/10.1111/jnc.16020"
+    year: 2023
+
   - title: "Development of a panel for detection of pathogens in xenotransplantation donor pigs"
     authors: "Hikari Otabi, Hiroto Miura, Haruka Uryu, Rana Kobayashi-Harada, Kanako Abe, Kazuaki Nakano, Kazuhiro Umeyama, Koki Hasegawa, Takamitsu Tsukahara, Hiroshi Nagashima, Ryo Inoue"
     publisher: "Xenotransplantation, e12825. 2023."
