@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended"
   ],
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": { "enabled": true },
+  "packageRules": [
+    {
+      "description": "@astrojs/check and the Astro language server need the TypeScript JS API, which TypeScript 7 no longer ships",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    }
+  ]
 }
