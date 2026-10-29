@@ -12,26 +12,22 @@ const { href, title, authors, publisher } = Astro.props;
 <li class="m-5">
   <div class="font-bold">{title}</div>
   <div>
-    {
-      authors
-        .split(", ")
-        .map((author) => {
-          if (author.match(/Hikari Otabi/)) {
-            const a = author.split("(");
-            return (
-              <>
-                <span class="font-bold underline">{a[0]}</span>
-                <span>
-                  {a.slice(1).length !== 0 && "(" + a.slice(1).join("(")}
-                </span>
-              </>
-            );
-          } else {
-            return <span>{author}</span>;
-          }
-        })
-        .map((e, i) => [i > 0 && ", ", e])
-    }
+    {authors
+      .split(", ")
+      .map((author) => {
+        if (author.match(/Hikari Otabi/)) {
+          const a = author.split("(");
+          return (
+            <>
+              <span class="font-bold underline">{a[0]}</span>
+              <span>{a.slice(1).length !== 0 && "(" + a.slice(1).join("(")}</span>
+            </>
+          );
+        } else {
+          return <span>{author}</span>;
+        }
+      })
+      .map((e, i) => [i > 0 && ", ", e])}
   </div>
   <div>{publisher}</div>
   <div class="underline">
