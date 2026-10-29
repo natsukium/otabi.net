@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1727188751,
-        "narHash": "sha256-ldXqUOFgTzTWUH+SvQ7AYTpH17y/k7VhthCHFDMUIG0=",
+        "lastModified": 1793281719,
+        "narHash": "sha256-ozCLPRF/myWw3DNqwbK/pUW82nzfwIRt7kOwQPpXix0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "51296fce6f2b33717f710788af4e134aa7ff0e58",
+        "rev": "bb2d31f2a0593359576b5c41cb762a13e62fe711",
         "type": "github"
       },
       "original": {
@@ -15,9 +15,25 @@
         "type": "github"
       }
     },
+    "node-toolchain": {
+      "locked": {
+        "lastModified": 1793282016,
+        "narHash": "sha256-QRrTCC7MOOeCj1Q/GoEzVQXAeLRoWTLMgrJYClvPpOM=",
+        "ref": "refs/heads/main",
+        "rev": "2da7c344b0d16855aa9d15c0997e8c987b2b81f0",
+        "revCount": 2,
+        "type": "git",
+        "url": "https://git.natsukium.com/natsukium/node-toolchain.nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.natsukium.com/natsukium/node-toolchain.nix"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "node-toolchain": "node-toolchain"
       }
     }
   },

@@ -1,10 +1,15 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
+    node-toolchain.url = "git+https://git.natsukium.com/natsukium/node-toolchain.nix";
   };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      node-toolchain,
+    }:
     let
       forAllSystems = nixpkgs.lib.genAttrs [
         "x86_64-linux"
@@ -19,14 +24,14 @@
             inherit system;
             config.allowUnfree = true;
           };
+          toolchain = node-toolchain.lib.mkToolchain {
+            inherit pkgs;
+            src = self;
+          };
         in
         {
           default = pkgs.mkShell {
-            buildInputs = with pkgs; [
-              nodejs
-              pnpm
-              terraform
-            ];
+            buildInputs = toolchain.packages ++ [ pkgs.terraform ];
           };
         }
       );
