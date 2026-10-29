@@ -8,21 +8,19 @@ import papers from "../../papers.yaml";
 <SectionHeader>MY LATEST RESEARCH</SectionHeader>
 
 <div class="md:flex">
-  {
-    papers.papers
-      .map((paper) => {
-        if (paper.authors.match(/^Hikari Otabi/)) {
-          return (
-            <Research
-              title={paper.title}
-              publisher={paper.publisher}
-              date={paper.date}
-              href={paper.href}
-            />
-          );
-        }
-      })
-      .filter((elem) => elem !== undefined)
-      .slice(0, 3)
-  }
+  {papers.papers
+    .map((paper) => {
+      if (paper.authors.match(/^Hikari Otabi/)) {
+        return (
+          <Research
+            title={paper.title}
+            publisher={paper.publisher}
+            date={paper.date}
+            href={paper.href}
+          />
+        );
+      }
+    })
+    .filter((elem) => elem !== undefined)
+    .slice(0, 3)}
 </div>

@@ -14,25 +14,23 @@ let prev = 0;
     <SectionHeader>PUBLICATIONS</SectionHeader>
     <h3 class="text-xl font-bold italic">Journal Publications</h3>
     <ul>
-      {
-        papers.papers.map((paper) => {
-          const showYear = paper.year !== prev;
-          prev = paper.year;
-          return (
-            <>
-              {showYear ? <li class="text-xl">{paper.year}</li> : ""}
-              <ul>
-                <Publication
-                  title={paper.title}
-                  authors={paper.authors}
-                  publisher={paper.publisher}
-                  href={paper.href}
-                />
-              </ul>
-            </>
-          );
-        })
-      }
+      {papers.papers.map((paper) => {
+        const showYear = paper.year !== prev;
+        prev = paper.year;
+        return (
+          <>
+            {showYear ? <li class="text-xl">{paper.year}</li> : ""}
+            <ul>
+              <Publication
+                title={paper.title}
+                authors={paper.authors}
+                publisher={paper.publisher}
+                href={paper.href}
+              />
+            </ul>
+          </>
+        );
+      })}
     </ul>
   </Section>
   <Section bg="bg-wine-red" text="text-rose">
@@ -41,9 +39,7 @@ let prev = 0;
       <li class="text-xl">2021</li>
       <ul>
         <li class="m-5">
-          <div class="font-bold">
-            Encouragement Award, Japanese Society of Animal Science
-          </div>
+          <div class="font-bold">Encouragement Award, Japanese Society of Animal Science</div>
           <div>September, 2021</div>
         </li>
       </ul>
