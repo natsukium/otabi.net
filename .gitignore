@@ -113,3 +113,4 @@ terraform.tfstate*
 
 .direnv/
 .envrc
+.pre-commit-config.yaml
