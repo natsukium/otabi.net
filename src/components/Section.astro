@@ -2,12 +2,13 @@
 export interface Props {
   bg: string;
   text: string;
+  class?: string;
 }
 
-const { bg, text } = Astro.props;
+const { bg, text, class: className } = Astro.props;
 ---
 
-<div class=`${bg} ${text} p-5`>
+<div class:list={[bg, text, "p-5", className]}>
   <div class="max-w-(--breakpoint-md) mx-auto">
     <slot />
   </div>
