@@ -2,7 +2,7 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 4.0"
+      version = "~> 5.0"
     }
   }
 }
@@ -21,40 +21,44 @@ variable "domain" {
   default = "otabi.net"
 }
 
-resource "cloudflare_record" "apex" {
+moved {
+  from = cloudflare_record.apex
+  to   = cloudflare_dns_record.apex
+}
+
+resource "cloudflare_dns_record" "apex" {
   zone_id = var.zone_id
   type    = "CNAME"
   name    = "otabi.net"
-  value   = cloudflare_pages_project.otabi_net.subdomain
+  content = cloudflare_pages_project.otabi_net.subdomain
   proxied = true
+  ttl     = 1
 }
 
 resource "cloudflare_pages_domain" "apex" {
   account_id   = var.account_id
   project_name = var.project_name
-  domain       = var.domain
+  name         = var.domain
 }
 
 resource "cloudflare_pages_project" "otabi_net" {
   account_id        = var.account_id
   name              = var.project_name
   production_branch = "main"
-  source {
+  source = {
     type = "github"
-    config {
-      owner                         = "natsukium"
-      repo_name                     = "otabi.net"
-      production_branch             = "main"
-      deployments_enabled           = true
-      production_deployment_enabled = true
-      preview_branch_includes       = ["*"]
-      preview_branch_excludes       = []
+    config = {
+      owner                          = "natsukium"
+      repo_name                      = "otabi.net"
+      production_branch              = "main"
+      preview_deployment_setting     = "all"
+      production_deployments_enabled = true
+      preview_branch_includes        = ["*"]
     }
   }
-  build_config {
+  build_config = {
     build_command   = "npm run build"
     destination_dir = "/dist"
     root_dir        = "/"
   }
 }
-
