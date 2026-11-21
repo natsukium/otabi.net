@@ -1,8 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "security:minimumReleaseAgeNpm"],
-  "lockFileMaintenance": { "enabled": true },
+  "extends": ["config:best-practices"],
+  "lockFileMaintenance": { "automerge": true },
+  "nix": { "enabled": true },
+  "platformAutomerge": true,
   "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
     {
       "description": "@astrojs/check and the Astro language server need the TypeScript JS API, which TypeScript 7 no longer ships",
       "matchPackageNames": ["typescript"],
