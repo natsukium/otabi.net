@@ -177,19 +177,19 @@ importers:
         version: 4.3.5
     devDependencies:
       '@astrojs/check':
-        specifier: ^0.9.12
+        specifier: 0.9.12
         version: 0.9.12(@emnapi/runtime@1.11.3)(prettier@3.9.10)(typescript@6.0.3)
       '@astrojs/language-server':
-        specifier: ^2.14.2
+        specifier: 2.17.3
         version: 2.17.3(@emnapi/runtime@1.11.3)(prettier@3.9.10)(typescript@6.0.3)
       '@rollup/plugin-yaml':
-        specifier: ^5.0.0
+        specifier: 5.0.1
         version: 5.0.1
       oxfmt:
-        specifier: ^0.79.0
+        specifier: 0.79.0
         version: 0.79.0(@astrojs/compiler-rs@0.5.2)
       typescript:
-        specifier: ^6.0.3
+        specifier: 6.0.3
         version: 6.0.3
 
 packages:
