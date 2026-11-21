@@ -58,11 +58,11 @@
     },
     "node-toolchain": {
       "locked": {
-        "lastModified": 1793282016,
-        "narHash": "sha256-QRrTCC7MOOeCj1Q/GoEzVQXAeLRoWTLMgrJYClvPpOM=",
+        "lastModified": 1794961049,
+        "narHash": "sha256-kaHQ/OvvHOMOjfFsaWBrF5D62EWpY+Jyd3aH8Yvg/p4=",
         "ref": "refs/heads/main",
-        "rev": "2da7c344b0d16855aa9d15c0997e8c987b2b81f0",
-        "revCount": 2,
+        "rev": "51477d9f5f7cd449609433356932444aac016862",
+        "revCount": 12,
         "type": "git",
         "url": "https://git.natsukium.com/natsukium/node-toolchain.nix"
       },
